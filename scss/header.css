@@ -1,0 +1,14 @@
+.header {
+  background-image: url(/Assets/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headerSelection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  box-sizing: border-box;
+}/*# sourceMappingURL=header.css.map */
