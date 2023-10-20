@@ -1,5 +1,11 @@
-@import url(/scss/header.css);
-@import url(/scss/nav.css);
-@import url(/scss/main.css);
-@import url(/scss/layout.css);
-@import url(/scss/footer.css); //þetta eru öll scss skjölin sem við vinnum með
+
+@import './scss/header'; //þetta eru öll scss skjölin sem við vinnum með
+@import './scss/main';
+@import './scss/layout';
+@import './scss/footer';
+@import './scss/nav';
+@import './scss/config';
+@import './scss/variables';
+@import './scss/boxes';
+@import './scss/';
+
