@@ -10,11 +10,16 @@
     width: 1px;
   }
 
-header {
+.header {
+    background-image: url(/Assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     display: flex;
-    justify-content: space-between;
-    width: calc(100% - (2 * var(--offset)));
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: calc(100% - (2 * var(--offset)));
 
     .logo {
         display: flex;
