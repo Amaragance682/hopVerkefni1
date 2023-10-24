@@ -1,39 +1,185 @@
 <!DOCTYPE html>
 <html lang="is">
-
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Forsíða</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heimasíða</title>
     <link rel="stylesheet" href="./styles.css">
-    
-    </head>
-    <body>
-        <header class="header">
-            <nav class="headerSelection">
-                <h2>Tæknibúðin</h2>
+    <meta name="description" content="Forsíða Tæknibúðarinnar, keyptu græjurnar hjá okkur!">
+    <meta property="og:title" content="Tæknibúðin">
+    <meta property="og:description" content="Velkomin í Tæknibúðina!">
+    <meta property="og:image" content="./myndir/sharing.jpg">
+</head>
+<body>
+    <header>
+        <img src="myndir/Logo.png" alt="none">
+        <h1>Tæknibúðin</h1>
+        <p class="sr-only"><a href="#efni">Beint í efni</a></p>
+        <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl.">
+        <nav class="navigation">
+            <ul>
+                <li><a class="link" href="sidur/vorulisti.html">Nýjar vörur</a></li>
+                <li><a class="link" href="sidur/vorulisti.html">Tilboðs vörur</a></li>
+                <li><a class="link" href="sidur/vorulisti.html">Allar vörur</a></li>
+            </ul>
+        </nav>
+        <img src="myndir/Cart_icon.png" alt="none">
+    </header>
+    <nav>
+            <img src="../img/Logo.png" alt="none">
+            <h2>Tæknibúðin</h2>
+            <input type="search" name="Leit" id="Leit" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl.">
+            <a href="./vorulisti.html">Nýjar vörur</a>
+            <a href="./vorulisti.html">Tilboðsvörur</a>
+            <a href="./vorulisti.html">Allar vörur</a>
+            <img src="../img/Cart_icon.png" alt="none">
+    </nav>
+<a href="Sites/voruListi.html">Vörulisti</a>
+        <a href="Sites/vara.html">Vara</a>
+        <a href="Sites/pontunarSida.html">Pöntun</a>
+        <main class="main">
+            <section class="texti">
                 <div>
-                    <label for="leit"></label>
-                    <input id="leit" type="text" required>
+                    <p>Nýjar vörur í <strong>hverri viku</strong></p>
+                    <p>Við fljúgum með nýjar vörur til landsins í hverri viku 
+                        og bjóðum upp á frábært verð því lorem ipsum 
+                        dolor sit amet, consectetur adipiscing orci. Donec
+                        sit amet elementum orci, ac feugiat mauris.</p>
+                    <button>SKOÐA NÝJAR VÖRUR</button>
                 </div>
-                <div class="headerLinks">
-                    <p><a href="/Sites/voruListi.html">Nýar vörur</a></p>
-                    <p><a href="/Sites/index">Tilboðs vörur</a></p>
-                    <p><a href="/Sites/vara.html">Allar vörur</a></p>
-                    <icon href="/Sites/pontunarSida.html">her a ad koma karfa</icon>
-                </div>
-            </nav>
-            <div class="aukaTextiHeaderMain">
-                <h1>Tilboðsvika</h1>
-                    <p>Keyptu græjunar hjá okkur!</p>
-                </div>
+                <img src="img/flugvel.png" alt="none">
+            </section>
+    
+            <div>
+                <p class="titles">Nokkrar af <strong>nýjustu vörunum</strong> okkar</p>
+            </div>
+                <section class="boxes">    
+                    <div class="box">
+                        <img src="img/Modurbord.png" alt="none">
+                            <p class="title">Tæknilegt móðurborð</p>
+                                <div>
+                                    <p class="litilbox">Nýtt</p>
+                                    <p class="litilbox">Takmarkað magn</p>
+                                </div>
+                            <p>189.000 kr.</p>
+                            <button>SETJA Í KÖRFU</button>
+                    </div>
+                    <div class="box">
+                        <img src="img/robot.png" alt="none">
+                            <p class="title">Vinalegur vinnuróbot</p>
+                                <div>
+                                    <p class="litilbox">Nýtt</p>
+                                    <p class="litilbox">Ekki fyrir börn</p>
+                                </div>
+                            <p>1.499.990 kr.</p>
+                            <button>SETJA Í KÖRFU</button>
+                    </div>
+                    <div class="box ">
+                        <img src="img/Matrixid.png" alt="none">
+                            <p class="title">Matrixið</p>
+                                <div>
+                                    <p class="litilbox">Nýtt</p>
+                                    <p class="litilbox">Ekki fyrir róbóta</p>
+                                </div>
+                            <p>299.999.999.499.990 kr.</p>    
+                            <button>SETJA Í KÖRFU</button>
+                    </div>
+                    <div class="box">
+                        <img src="img/robot.png" alt="none">
+                            <p class="title">Vinalegur vinnuróbot</p>
+                                <div>
+                                    <p class="litilbox">Nýtt</p>
+                                    <p class="litilbox">Ekki fyrir börn</p>
+                                </div>
+                            <p>1.499.990 kr.</p>
+                            <button>SETJA Í KÖRFU</button>
+                    </div>
+                </section>
+            <section class="texti">
+                    <img src="img/flugvel.png" alt="none">
+                <div>
+                    <p><strong>Stærsta vöruhús</strong> á Íslandi</p>
+                    <p>Vöruhúsið okkar er það stærsta á Íslandi og með 
+                        fullt af vörum útum allt risus quis risus mattis 
+                        sollicitudin. Donec egestas justo orci, in egestas 
+                        quam molestie id.</p>
+                    <button>SKOÐA ALLAR VÖRUR</button>   
+                </div> 
+            </section>
+            <div>
+                <p class="titles"><strong>Nokkur dæmi úr ótrúlegu vöruúrvali okkar</strong></p>
+            </div>
                 
-        </header>
-        <main>
-
+                <section class="boxes">
+                    
+                    <div class="box">
+                        <img src="img/robot.png" alt="none">
+                            <p class="title">Vinalegur vinnuróbot</p>
+                                <div>
+                                    <p class="litilbox">Nýtt</p>
+                                    <p class="litilbox">Ekki fyrir börn</p>
+                                </div>
+                            <p>1.499.990 kr.</p>
+                            <button>SETJA Í KÖRFU</button>
+                    </div>
+                    <div class="box">
+                        <img src="img/Modurbord.png" alt="none">
+                            <p class="title">Tæknilegt móðurborð</p>
+                                <div>
+                                    <p class="litilbox">Nýtt</p>
+                                    <p class="litilbox">Takmarkað magn</p>
+                                </div>
+                            <p>189.000 kr.</p>
+                            <button>SETJA Í KÖRFU</button>
+                    </div>
+                    <div class="box">
+                        <img src="img/robot.png" alt="none">
+                            <p class="title">Vinalegur vinnuróbot</p>
+                                <div>
+                                    <p class="litilbox">Nýtt</p>
+                                    <p class="litilbox">Ekki fyrir börn</p>
+                                </div>
+                            <p>1.499.990 kr.</p>
+                            <button>SETJA Í KÖRFU</button>
+                    </div>
+                    <div class="box ">
+                        <img src="img/Matrixid.png" alt="none">
+                            <p class="title">Matrixið</p>
+                                <div>
+                                    <p class="litilbox">Nýtt</p>
+                                    <p class="litilbox">Ekki fyrir róbóta</p>
+                                </div>
+                            <p>299.999.999.499.990 kr.</p>    
+                            <button>SETJA Í KÖRFU</button>
+                    </div>
+                </section>
+            <footer>
+                <section>
+                    <p> OPNUNARTÍMI</p>
+                    <dl>
+                        <dt>Opið alla virka daga frá 9:00-18:00</dt>
+                        <dd>einhvad</dd>
+                        <dd>Opið á laugardögum frá 12:00-16:00</dd>
+                        <dd>Lokað á Sunnudögum</dd>
+                    </dl>
+                </section>    
+                <section>  
+                    <p>HAFÐU SAMBAND</p>
+                    <dl>
+                        <dt>Skiptiborð: 234-4568</dt>
+                        <dd>Tölvupóstur: thjonusta@example.org</dd>
+                    </dl>
+                </section>
+                <section>
+                    <p>ANNAÐ</p>
+                        <dl>
+                            <dt>Rekja sendingu</dt>
+                            <dd>Skilaréttur</dd>
+                            <dd>Um okkur</dd>
+                            <dd>Störf</dd>
+                        </dl>
+                </section>  
+            </footer>
         </main>
-        <footer>
-
-        </footer>
-    </body>
+</body>
 </html>

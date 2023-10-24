@@ -1,0 +1,32 @@
+/*Main*/
+.main{
+    background-color:#E1CEC2;
+    margin-top: 2rem;
+    padding-top: 5px;
+}
+
+/*textar*/
+.titles {
+    font-size: x-large;
+    text-align: center;
+}
+
+.texti{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    padding: 3rem;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.texti div{
+    display: grid;
+    justify-self: center;
+    padding: 10px;
+
+    background-color: beige;
+    border-radius: 5px;
+}
