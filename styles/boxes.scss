@@ -1,0 +1,49 @@
+/*box*/
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+    padding: 1rem;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.boxes .box {
+    display: grid;
+    justify-self: center;
+    padding: 10px;
+
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.box .title {
+    font-size: larger;
+}
+
+/*Kassar í vöru*/
+.kassi{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.kassi .minnibox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.kassar {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 20%;    
+    margin-right: 20%;
+}
+
+.kassi .litilbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin: 5px;
+    width: 50%;
+    display: inline;
+}

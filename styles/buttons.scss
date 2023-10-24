@@ -1,0 +1,42 @@
+/**Takkar**/
+.boxes .box button {
+    background-color: #FFFFFF;
+    border: solid black 1px;
+    text-align: center;
+    display: inline;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+ .texti div button {
+    background-color: #6F4E37;
+    color: #fefeff;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+/*litlir takkar*/
+
+.box .litilbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin: 5px;
+    width: 50%;
+    display: inline;
+}
+
+.takkar .litilbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin: 5px;
+    width: 50%;
+    display: inline;
+}
+ 
+.litilbox {
+    background-color: #E1CEC2;
+    padding: 4px;
+    border-radius: 5px;
+}
