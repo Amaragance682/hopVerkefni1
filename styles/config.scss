@@ -55,3 +55,9 @@ html {
     z-index: 1000;
     pointer-events: none;
   }
+
+  a {
+    color: inherit;
+    background-color: inherit;
+    text-decoration: none;
+  }

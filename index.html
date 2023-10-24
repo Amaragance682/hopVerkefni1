@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heimasíða</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css">
     <meta name="description" content="Forsíða Tæknibúðarinnar, keyptu græjurnar hjá okkur!">
     <meta property="og:title" content="Tæknibúðin">
     <meta property="og:description" content="Velkomin í Tæknibúðina!">
@@ -12,31 +12,21 @@
 </head>
 <body>
     <header>
-        <img src="myndir/Logo.png" alt="none">
-        <h1>Tæknibúðin</h1>
-        <p class="sr-only"><a href="#efni">Beint í efni</a></p>
-        <input type="text" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl.">
-        <nav class="navigation">
+        <div class="logo">
+            <img src="./img/Logo.png" alt="none">
+            <h1>Tæknibúðin</h1>
+            <p class="sr-only"><a href="#efni">Beint í efni</a></p>
+        </div>
+        <input type="search" name="Leit" id="Leit" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl.">
+        <nav class="nav">
             <ul>
                 <li><a class="link" href="sidur/vorulisti.html">Nýjar vörur</a></li>
                 <li><a class="link" href="sidur/vorulisti.html">Tilboðs vörur</a></li>
                 <li><a class="link" href="sidur/vorulisti.html">Allar vörur</a></li>
             </ul>
         </nav>
-        <img src="myndir/Cart_icon.png" alt="none">
+        <img class="cart" src="./img/Cart_icon.png" alt="none">
     </header>
-    <nav>
-            <img src="../img/Logo.png" alt="none">
-            <h2>Tæknibúðin</h2>
-            <input type="search" name="Leit" id="Leit" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl.">
-            <a href="./vorulisti.html">Nýjar vörur</a>
-            <a href="./vorulisti.html">Tilboðsvörur</a>
-            <a href="./vorulisti.html">Allar vörur</a>
-            <img src="../img/Cart_icon.png" alt="none">
-    </nav>
-<a href="Sites/voruListi.html">Vörulisti</a>
-        <a href="Sites/vara.html">Vara</a>
-        <a href="Sites/pontunarSida.html">Pöntun</a>
         <main class="main">
             <section class="texti">
                 <div>
