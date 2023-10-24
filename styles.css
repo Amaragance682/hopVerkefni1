@@ -1,5 +1,140 @@
-@import url(/scss/header.css);
-@import url(/scss/nav.css);
-@import url(/scss/main.css);
-@import url(/scss/layout.css);
-@import url(/scss/footer.css);/*# sourceMappingURL=styles.css.map */
+@charset "UTF-8";
+.header {
+  background-image: url(/Assets/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headerSelection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Reset og border-box á allt */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* https://css-tricks.com/building-css-grid-overlay/ */
+:root {
+  --grid-color: hsla(0, 75%, 75%, 0.25);
+  --grid-repeating-width: calc(100% / var(--columns));
+  --grid-column-width: calc((100% / var(--columns)) - var(--gutter));
+  --grid-background-width: calc(100% + var(--gutter));
+  --grid-background-columns: repeating-linear-gradient(
+    to right,
+    var(--grid-color),
+    var(--grid-color) var(--grid-column-width),
+    transparent var(--grid-column-width),
+    transparent var(--grid-repeating-width)
+  );
+}
+
+html {
+  position: relative;
+}
+
+html::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: calc(100% - 2 * var(--offset));
+  max-width: var(--max-width);
+  min-height: 100vh;
+  background-image: var(--grid-background-columns);
+  background-size: var(--grid-background-width) 100%;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+/* Stillingar */
+:root {
+  /* Grunn bilið okkar er 1rem == 16px */
+  --font-base-body-px: 16px;
+  --spacing: 1rem;
+  /* Bil á milli „stærri“ eininga (header, efnisbox, footer) */
+  --vertical-space: calc(var(--gutter));
+  /* Hámarksbreidd á efni */
+  --max-width: 1400px;
+  --width-offset: calc(100% - (2 * var(--offset)));
+  /* Border breiddir */
+  --border-small: 1px;
+  --border-large: 8px;
+  --border-radius: 6px;
+  /* Litir */
+  --color-gold: #ffe7ae;
+  --color-gold-light: #fff1cf;
+  --color-dark: #2f0505;
+  --color-light: #fff9ee;
+  /* Grid stillingar */
+  --columns: 12;
+  --gutter: 30px;
+  --offset: 20px;
+  /* Letur stillingar */
+  --font-base-size: 1rem;
+  --font-family-base: "Noto Sans Display", Helvetica, Arial, sans-serif;
+  --font-family-heading: "Lora", Georgia, serif;
+  /* Transitions */
+  --transition-time-short: 300ms;
+  --transition-time-long: 600ms;
+  --transition-timing-function: ease-in-out;
+}
+
+/* https://css-tricks.com/building-css-grid-overlay/ */
+:root {
+  --grid-color: hsla(0, 75%, 75%, 0.25);
+  --grid-repeating-width: calc(100% / var(--columns));
+  --grid-column-width: calc((100% / var(--columns)) - var(--gutter));
+  --grid-background-width: calc(100% + var(--gutter));
+  --grid-background-columns: repeating-linear-gradient(
+    to right,
+    var(--grid-color),
+    var(--grid-color) var(--grid-column-width),
+    transparent var(--grid-column-width),
+    transparent var(--grid-repeating-width)
+  );
+}
+
+html {
+  position: relative;
+}
+
+html::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: calc(100% - 2 * var(--offset));
+  max-width: var(--max-width);
+  min-height: 100vh;
+  background-image: var(--grid-background-columns);
+  background-size: var(--grid-background-width) 100%;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
