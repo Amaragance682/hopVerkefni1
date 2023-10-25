@@ -1,5 +1,162 @@
-@import url(/scss/header.css);
-@import url(/scss/nav.css);
-@import url(/scss/main.css);
-@import url(/scss/layout.css);
-@import url(/scss/footer.css);/*# sourceMappingURL=styles.css.map */
+/*Main*/
+.main{
+    background-color:#E1CEC2;
+    margin-top: 2rem;
+    padding-top: 5px;
+}
+
+/*Pöntunarform*/
+
+.box3 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.boxes3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+/*textar*/
+.titles {
+    font-size: x-large;
+    text-align: center;
+}
+
+.texti{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    padding: 3rem;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.texti div{
+    display: grid;
+    justify-self: center;
+    padding: 10px;
+
+    background-color: beige;
+    border-radius: 5px;
+}
+
+/*box*/
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+    padding: 1rem;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.boxes .box {
+    display: grid;
+    justify-self: center;
+    padding: 10px;
+
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: larger;
+}
+
+/*litlir takkar*/
+
+.box .litilbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin: 5px;
+    width: 50%;
+    display: inline;
+}
+
+.takkar .litilbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin: 5px;
+    width: 50%;
+    display: inline;
+}
+ 
+.litilbox {
+    background-color: #E1CEC2;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+/**Footer**/
+footer {
+    display: grid;
+    text-align: left;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 1rem;
+    line-height: 25px;
+    width: 100%;
+
+    padding: 1rem;
+    
+    background-color: #3C2A1E;
+    color: white;
+ }
+
+ footer section p {
+    border-bottom: solid 2px #E1CEC2;
+    font-size: x-large;
+ }
+
+ footer ul {
+    list-style: none;
+ }
+
+ /**Takkar**/
+ .boxes .box button {
+    background-color: #FFFFFF;
+    border: solid black 1px;
+    text-align: center;
+    display: inline;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+ .texti div button {
+    background-color: #6F4E37;
+    color: #fefeff;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+/*Kassar í vöru*/
+.kassi{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.kassi .minnibox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.kassar {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 20%;    
+    margin-right: 20%;
+}
+
+.kassi .litilbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin: 5px;
+    width: 50%;
+    display: inline;
+}
