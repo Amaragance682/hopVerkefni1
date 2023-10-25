@@ -148,17 +148,24 @@ html::before {
 }
 
 /*Pöntunarform*/
-.box1 {
+.kubbar{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
+  grid-template-rows: auto;
 
-}
-
-.box2{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   width: 50%;
+}
+.kubbar .kubbur {
+  grid-column: span ;
+  
+  display: grid;
+  flex-direction: column;
+
+  width: 50%;
+  min-height: 10px;
+
+  border-radius: 15px;
+}
+.kubbar .kubbur .myndir{
 }
 
 /*textar*/
