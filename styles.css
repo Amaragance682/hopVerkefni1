@@ -13,7 +13,6 @@
   background-image: url(/Assets/Background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0.5rem 0;
 }
 
 .header .header-content {
@@ -100,10 +99,10 @@ footer ul {
 }
 
 .nav ul {
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
-  list-style: none;
+  display: grid;
   align-items: center;
+  list-style: none;
 }
 
 /* Reset og border-box á allt */
@@ -250,14 +249,23 @@ html::before {
   font-family: "Lora";
   font-style: normal;
   font-display: swap;
-  src: url(../fonts/Lora/Lora-VariableFont_wght.ttf) format("woff");
+  src: url(../fonts/Lora-VariableFont_wght.ttf) format("woff");
 }
 @font-face {
   font-family: "Noto Sans Display";
   font-style: normal;
   font-display: swap;
-  src: url(../fonts/Noto_Sans_Display/NotoSansDisplay-VariableFont_wdth\,wght.ttf) format("woff");
+  src: url(../fonts/NotoSansDisplay-VariableFont_wdth\,wght.ttf) format("woff");
 }
+h1, h2, h3 {
+  font-family: var(--font-family-heading);
+}
+
+html {
+  font-size: var(--font-base-body-px);
+  font-family: var(--font-family-base);
+}
+
 /**Takkar**/
 .boxes .box button {
   background-color: #FFFFFF;

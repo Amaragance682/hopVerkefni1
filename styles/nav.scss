@@ -1,6 +1,6 @@
 .nav ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    list-style: none;
-    align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  align-items: center;
+  list-style: none;
 }
