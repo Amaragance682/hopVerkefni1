@@ -19,8 +19,9 @@
 .header .header-content {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 4fr 4fr 3fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    gap: var(--vertical-space);
 
     width: var(--width-offset);
     max-width: var(--max-width);
@@ -30,16 +31,26 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: start;
+        align-items: center;
     }
 
     .search {
-        display: grid;
-        grid-column: span 1;
         border: var(--border-medium) solid var(--black-coffee);
         border-radius: var(--border-radius);
     }
 
+    .link {
+        
+    }
+
     .cart {
         display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    img {
+        max-height: 25px;
+
     }
   }
