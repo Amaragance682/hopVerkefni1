@@ -12,8 +12,8 @@
 .header {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 4fr 4fr 4fr;
-  justify-content: center;
+  grid-template-columns: 4fr 4fr 3fr 1fr;
+  justify-items: center;
   align-items: center;
   width: var(--width-offset);
   background-image: url(/Assets/Background.png);
@@ -22,7 +22,6 @@
 }
 .header .logo {
   display: flex;
-  justify-content: flex-start;
 }
 .header input {
   padding: var(--spacing);
@@ -32,7 +31,6 @@
 }
 .header .cart {
   display: flex;
-  justify-content: flex-end;
 }
 
 /*Main*/
