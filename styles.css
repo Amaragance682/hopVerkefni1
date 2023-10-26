@@ -25,7 +25,7 @@
   max-width: var(--max-width);
   margin: auto;
 }
-.header .header-content .logo {
+.header .header-content .logo-container {
   display: flex;
   flex-direction: row;
   align-items: center;
