@@ -13,6 +13,7 @@
   background-image: url(/Assets/Background.png);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 0.5rem 0;
 }
 
 .header .header-content {
@@ -26,19 +27,18 @@
   margin: auto;
 }
 .header .header-content .logo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: start;
+  display: flex;
+  flex-direction: row;
   align-items: center;
 }
 .header .header-content .search {
-  border: var(--border-medium) solid var(--black-coffee);
+  padding: 0.5rem;
+  border: var(--border-small) solid var(--color-black-coffee);
   border-radius: var(--border-radius);
 }
 .header .header-content .cart {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
 }
 .header .header-content img {
   max-height: 25px;
@@ -103,6 +103,7 @@ footer ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   list-style: none;
+  align-items: center;
 }
 
 /* Reset og border-box á allt */
