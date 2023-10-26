@@ -37,7 +37,6 @@
 }
 .header .header-content .cart {
   display: flex;
-  justify-content: flex-end;
 }
 .header .header-content img {
   max-height: 25px;
@@ -194,6 +193,7 @@ html::before {
   --font-base-size: 1rem;
   --font-family-base: "Lato", Helvetica, Arial, sans-serif;
   --font-family-heading: "Lora", Georgia, serif;
+  --font-family-huge: "Lato", Helvetica, Arial, sans-serif;
   /* Transitions */
   --transition-time-short: 300ms;
   --transition-time-long: 600ms;
@@ -248,6 +248,18 @@ html::before {
   display: inline;
 }
 
+/* Banner */
+.banner {
+  display: grid;
+  grid-template-rows: 2;
+  justify-items: center;
+  align-items: center;
+}
+.banner h1 {
+  font-family: var(--font-family-huge);
+  font-size: 100px;
+}
+
 @font-face {
   font-family: "Lora";
   font-style: normal;
@@ -259,6 +271,12 @@ html::before {
   font-style: normal;
   font-display: swap;
   src: url(../fonts/Lato-Regular.ttf) format("woff");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: bold;
+  font-display: swap;
+  src: url(../fonts/Lato-Bold.ttf) format("woff");
 }
 h1, h2, h3 {
   font-family: var(--font-family-heading);

@@ -47,3 +47,16 @@
     width: 50%;
     display: inline;
 }
+
+/* Banner */
+.banner {
+    display: grid;
+    grid-template-rows: 2;
+    justify-items: center;
+    align-items: center;
+
+    h1 {
+        font-family: var(--font-family-huge);
+        font-size: 100px;
+    }
+}

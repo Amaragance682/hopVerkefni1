@@ -12,6 +12,13 @@
     src: url(../fonts/Lato-Regular.ttf) format('woff');
   }
 
+  @font-face {
+    font-family: 'Lato';
+    font-style: bold;
+    font-display: swap;
+    src: url(../fonts/Lato-Bold.ttf) format('woff');
+  }
+
   h1, h2, h3 {
     font-family: var(--font-family-heading);
   }
