@@ -41,7 +41,9 @@
     border-radius: 5px;
 }
 
-.button {
+.button-send {
     color: var(--color-light);
     background-color: var(--color-coffee);
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
 }
