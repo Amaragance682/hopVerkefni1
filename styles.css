@@ -80,6 +80,19 @@
   grid-template-columns: repeat(2, 1fr);
   gap: var(--vertical-space);
 }
+.pontunarsida .pontunarform .efra-nedra-form .vinstri-haegri-reitir {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--vertical-space);
+}
+.pontunarsida .pontunarform .efra-nedra-form .vinstri-haegri-reitir .reitur {
+  display: flex;
+  flex-direction: column;
+}
+.pontunarsida .pontunarform .efra-nedra-form .vinstri-haegri-reitir .reitur input {
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+}
 .pontunarsida .karfa img {
   width: 127px;
 }

@@ -6,10 +6,23 @@
     .pontunarform {
     
 
-        .form {
+        .efra-nedra-form {
             
+            .vinstri-haegri-reitir {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: var(--vertical-space);
 
-        
+                .reitur {
+                    display: flex;
+                    flex-direction: column;
+
+                    input {
+                        padding: 0.5rem;
+                        border-radius: var(--border-radius);
+                    }
+                }
+            }
         }
     }
 
