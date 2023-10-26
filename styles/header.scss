@@ -1,13 +1,13 @@
 @use "sass:math";
 
-.header {
+header {
     background-image: url(/Assets/Background.png);
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
-.headerSelection {
+.navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
