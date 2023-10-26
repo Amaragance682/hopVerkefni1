@@ -1,6 +1,9 @@
 @use "sass:math";
 
 header {
+    display: flex;
+    flex-direction: row;
+    display: inline-flex;
     background-image: url(/Assets/Background.png);
     background-repeat: no-repeat;
     background-size: cover;

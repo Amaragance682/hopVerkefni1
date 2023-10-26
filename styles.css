@@ -1,17 +1,78 @@
 @charset "UTF-8";
-.header {
+header {
+  display: flex;
+  flex-direction: row;
+  display: inline-flex;
   background-image: url(/Assets/Background.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.headerSelection {
+.navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
   box-sizing: border-box;
+}
+
+/*Main*/
+.main {
+  background-color: #E1CEC2;
+  margin-top: 2rem;
+  padding-top: 5px;
+}
+
+/*textar*/
+.titles {
+  font-size: x-large;
+  text-align: center;
+}
+
+.texti {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 3rem;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.texti div {
+  display: grid;
+  justify-self: center;
+  padding: 10px;
+  background-color: beige;
+  border-radius: 5px;
+}
+
+/**Footer**/
+footer {
+  display: grid;
+  text-align: left;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  line-height: 25px;
+  width: 100%;
+  padding: 1rem;
+  background-color: #3C2A1E;
+  color: white;
+}
+
+footer section p {
+  border-bottom: solid 2px #E1CEC2;
+  font-size: x-large;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
 }
 
 /* Reset og border-box á allt */
@@ -100,6 +161,54 @@ html::before {
   --transition-timing-function: ease-in-out;
 }
 
+/*box*/
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 1rem;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.boxes .box {
+  display: grid;
+  justify-self: center;
+  padding: 10px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.box .title {
+  font-size: larger;
+}
+
+/*Kassar í vöru*/
+.kassi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.kassi .minnibox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.kassar {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.kassi .litilbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5px;
+  width: 50%;
+  display: inline;
+}
+
 /* https://css-tricks.com/building-css-grid-overlay/ */
 :root {
   --grid-color: hsla(0, 75%, 75%, 0.25);
@@ -137,129 +246,6 @@ html::before {
   pointer-events: none;
 }
 
-/*# sourceMappingURL=styles.css.map */
-
-/*css stillingar*/
-/*Main*/
-.main{
-  background-color:#E1CEC2;
-  margin-top: 2rem;
-  padding-top: 5px;
-}
-
-/*Pöntunarform*/
-.box1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
-
-}
-
-.box2{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 50%;
-}
-
-/*textar*/
-.titles {
-  font-size: x-large;
-  text-align: center;
-}
-
-.texti{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
-  gap: 25px;
-
-  padding: 3rem;
-  margin-bottom: 15px;
-  width: 100%;
-}
-
-.texti div{
-  display: grid;
-  justify-self: center;
-  padding: 10px;
-
-  background-color: beige;
-  border-radius: 5px;
-}
-
-/*box*/
-.boxes {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
-  gap: 25px;
-  padding: 1rem;
-  margin-bottom: 15px;
-  width: 100%;
-}
-.boxes .box {
-  display: grid;
-  justify-self: center;
-  padding: 10px;
-
-  background-color: #FFFFFF;
-  border-radius: 5px;
-}
-
-.box .title {
-  font-size: larger;
-}
-
-/*litlir takkar*/
-
-.box .litilbox {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  margin: 5px;
-  width: 50%;
-  display: inline;
-}
-
-.takkar .litilbox {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  margin: 5px;
-  width: 50%;
-  display: inline;
-}
-
-.litilbox {
-  background-color: #E1CEC2;
-  padding: 4px;
-  border-radius: 5px;
-}
-
-/**Footer**/
-footer {
-  display: grid;
-  text-align: left;
-  grid-template-columns:repeat(3, 1fr);
-  gap: 1rem;
-  line-height: 25px;
-  width: 100%;
-
-  padding: 1rem;
-  
-  background-color: #3C2A1E;
-  color: white;
-}
-
-footer section p {
-  border-bottom: solid 2px #E1CEC2;
-  font-size: x-large;
-}
-
-footer ul {
-  list-style: none;
-}
-
 /**Takkar**/
 .boxes .box button {
   background-color: #FFFFFF;
@@ -277,29 +263,27 @@ footer ul {
   font-size: medium;
 }
 
-/*Kassar í vöru*/
-.kassi{
+/*litlir takkar*/
+.box .litilbox {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-.kassi .minnibox {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.kassar {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  margin-left: 20%;    
-  margin-right: 20%;
-}
-
-.kassi .litilbox{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
   margin: 5px;
   width: 50%;
   display: inline;
 }
+
+.takkar .litilbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5px;
+  width: 50%;
+  display: inline;
+}
+
+.litilbox {
+  background-color: #E1CEC2;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=styles.css.map */
