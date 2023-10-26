@@ -11,27 +11,32 @@
   }
 
 .header {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 4fr 4fr 3fr 1fr;
-    justify-items: center;
-    align-items: center;
-    width: var(--width-offset);
-
     background-image: url(/Assets/Background.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.header .header-content {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 4fr 4fr 3fr 1fr;
+    align-items: center;
+
+    width: var(--width-offset);
+    max-width: var(--max-width);
+    margin: auto;
 
     .logo {
-        display: flex;
-    }
-
-    input {
-        padding: var(--spacing);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: start;
     }
 
     .search {
-        border: var(--border-medium) solid var(--);
+        display: grid;
+        grid-column: span 1;
+        border: var(--border-medium) solid var(--black-coffee);
+        border-radius: var(--border-radius);
     }
 
     .cart {
