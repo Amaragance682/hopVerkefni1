@@ -77,25 +77,28 @@
 }
 
 /**Footer**/
-footer {
-  display: grid;
-  text-align: left;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  line-height: 25px;
-  width: 100%;
-  padding: 1rem;
+.footer {
   background-color: var(--color-coffee);
-  color: white;
+  padding: 3rem 0;
 }
 
-footer section p {
-  border-bottom: solid 2px var(--coffee-with-milk);
-  font-size: x-large;
+.footer-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--vertical-space);
+  line-height: 25px;
+  width: var(--width-offset);
+  margin: auto;
 }
 
-footer ul {
-  list-style: none;
+.footer-box {
+  color: var(--color-light);
+}
+
+.footer .footer-box .titill {
+  margin-bottom: calc(var(--spacing) * 0.5);
+  border-bottom: var(--border-small) solid var(--color-coffee-with-milk);
+  font-family: var(--font-family-base);
 }
 
 .nav ul {
@@ -189,7 +192,7 @@ html::before {
   --offset: 20px;
   /* Letur stillingar */
   --font-base-size: 1rem;
-  --font-family-base: "Noto Sans Display", Helvetica, Arial, sans-serif;
+  --font-family-base: "Lato", Helvetica, Arial, sans-serif;
   --font-family-heading: "Lora", Georgia, serif;
   /* Transitions */
   --transition-time-short: 300ms;
@@ -252,10 +255,10 @@ html::before {
   src: url(../fonts/Lora-VariableFont_wght.ttf) format("woff");
 }
 @font-face {
-  font-family: "Noto Sans Display";
+  font-family: "Lato";
   font-style: normal;
   font-display: swap;
-  src: url(../fonts/NotoSansDisplay-VariableFont_wdth\,wght.ttf) format("woff");
+  src: url(../fonts/Lato-Regular.ttf) format("woff");
 }
 h1, h2, h3 {
   font-family: var(--font-family-heading);
