@@ -1,5 +1,16 @@
 @use "sass:math";
 
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+.header {
 header {
     display: flex;
     flex-direction: row;
@@ -7,15 +18,24 @@ header {
     background-image: url(/Assets/Background.png);
     background-repeat: no-repeat;
     background-size: cover;
-
-}
-
-.navigation {
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: relative;
-    box-sizing: border-box;
+    width: calc(100% - (2 * var(--offset)));
 
-}
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    input {
+        padding: var(--spacing);
+    }
+
+    .cart {
+        display: flex;
+        justify-content: flex-end;
+    }
+  }

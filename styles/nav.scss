@@ -1,5 +1,7 @@
-.navigation ul {
+.nav ul {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     list-style: none;
   }
