@@ -1,5 +1,5 @@
 /**Takkar**/
-.boxes .box button {
+.boxes .box .button {
     background-color: #FFFFFF;
     border: solid black 1px;
     text-align: center;
@@ -8,7 +8,7 @@
     border-radius: 5px;
 }
 
- .texti div button {
+ .texti div .button {
     background-color: #6F4E37;
     color: #fefeff;
     border-radius: 5px;
@@ -39,4 +39,9 @@
     background-color: #E1CEC2;
     padding: 4px;
     border-radius: 5px;
+}
+
+.button {
+    color: var(--color-light);
+    background-color: var(--color-coffee);
 }

@@ -75,6 +75,15 @@
   border-radius: 5px;
 }
 
+.pontunarsida {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--vertical-space);
+}
+.pontunarsida .karfa img {
+  width: 127px;
+}
+
 /**Footer**/
 .footer {
   background-color: var(--color-coffee);
@@ -288,7 +297,7 @@ html {
 }
 
 /**Takkar**/
-.boxes .box button {
+.boxes .box .button {
   background-color: #FFFFFF;
   border: solid black 1px;
   text-align: center;
@@ -297,7 +306,7 @@ html {
   border-radius: 5px;
 }
 
-.texti div button {
+.texti div .button {
   background-color: #6F4E37;
   color: #fefeff;
   border-radius: 5px;
@@ -325,6 +334,11 @@ html {
   background-color: #E1CEC2;
   padding: 4px;
   border-radius: 5px;
+}
+
+.button {
+  color: var(--color-light);
+  background-color: var(--color-coffee);
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,21 @@
+.pontunarsida {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--vertical-space);
+
+    .pontunarform {
+    
+
+        .form {
+            
+
+        
+        }
+    }
+
+    .karfa {
+        img {
+            width: 127px;
+        }
+    }
+}
