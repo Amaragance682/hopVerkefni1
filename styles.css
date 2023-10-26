@@ -116,6 +116,11 @@
   list-style: none;
 }
 
+/*
+ul:last-child {
+  position: absolute;
+  right: 0;
+}*/
 /* Reset og border-box á allt */
 * {
   margin: 0;
