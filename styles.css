@@ -28,7 +28,7 @@
   padding: var(--spacing);
 }
 .header .search {
-  border: var(--border-medium);
+  border: var(--border-medium) solid var(--);
 }
 .header .cart {
   display: flex;
