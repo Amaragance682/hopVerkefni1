@@ -7,15 +7,59 @@
 
 /*Pöntunarform*/
 
-.box3 {
+.box1 {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 50% 50%;
 }
 
-.boxes3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.box2{
+   display: grid;
+   grid-row: 1;
+   row-gap: 10px;
 }
+.box4{
+    display: grid;
+    grid-column: 1;
+    row-gap: 10px;
+}
+
+
+.left {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 1;
+}
+
+.right {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 2;
+}
+
+.box3 {
+  display: grid;
+  grid-column: 2;
+}
+
+.boxes3 img{
+    width: 127px;
+    height: 85px;
+    flex-shrink: 0;
+}
+
+
+
+.boxes3 {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.panta{
+    margin: 15px;
+}
+
 
 
 /*textar*/
