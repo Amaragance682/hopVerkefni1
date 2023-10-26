@@ -1,6 +1,6 @@
 /*Main*/
 .main{
-    background-color:#E1CEC2;
+    background-color: var(--coffee-with-milk);
     margin-top: 2rem;
     padding-top: 5px;
 }
@@ -27,6 +27,6 @@
     justify-self: center;
     padding: 10px;
 
-    background-color: beige;
+    background-color: var(--coffee-with-milk);
     border-radius: 5px;
 }

@@ -9,12 +9,12 @@ footer {
 
     padding: 1rem;
     
-    background-color: #3C2A1E;
+    background-color: var(--color-coffee);
     color: white;
  }
 
  footer section p {
-    border-bottom: solid 2px #E1CEC2;
+    border-bottom: solid 2px var(--coffee-with-milk);
     font-size: x-large;
  }
 

@@ -11,19 +11,16 @@
   }
 
 .header {
-header {
-    display: flex;
-    flex-direction: row;
-    display: inline-flex;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 4fr 4fr 4fr;
+    justify-content: center;
+    align-items: center;
+    width: var(--width-offset);
+
     background-image: url(/Assets/Background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: calc(100% - (2 * var(--offset)));
 
     .logo {
         display: flex;
@@ -32,6 +29,10 @@ header {
 
     input {
         padding: var(--spacing);
+    }
+
+    .search {
+        border: var(--border-medium) solid var(--);
     }
 
     .cart {
