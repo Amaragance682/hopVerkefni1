@@ -31,6 +31,10 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+
+        h1 {
+            font-family: var(--font-family-logo);
+        }
     }
 
     .search {

@@ -6,21 +6,21 @@
   }
   
   @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato-Regular';
     font-style: normal;
     font-display: swap;
     src: url(../fonts/Lato-Regular.ttf) format('woff');
   }
 
   @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato-Bold';
     font-style: bold;
     font-display: swap;
     src: url(../fonts/Lato-Bold.ttf) format('woff');
   }
 
   h1, h2, h3 {
-    font-family: var(--font-family-heading);
+    font-family: var(--font-family-base);
   }
 
   html {
