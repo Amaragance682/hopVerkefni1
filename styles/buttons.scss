@@ -41,9 +41,12 @@
     border-radius: 5px;
 }
 
-.button-send {
+.pontunarform .button {
     color: var(--color-light);
     background-color: var(--color-coffee);
-    padding: 0.5rem;
+    padding: 10px 15px;
+    border: var(--border-small) solid var(--color-coffee);
     border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+    font-size: var(--font-large-body-size);
 }

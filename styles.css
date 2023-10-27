@@ -29,6 +29,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: var(--vertical-space);
 }
 .header .header-content .logo-container h1 {
   font-family: var(--font-family-logo);
@@ -53,6 +54,9 @@
   width: var(--width-offset);
   max-width: var(--max-width);
   margin: auto;
+}
+.main h1 {
+  font-size: var(--font-title-size);
 }
 
 /*textar*/
@@ -83,21 +87,47 @@
   grid-template-columns: repeat(2, 1fr);
   gap: var(--vertical-space);
 }
+.pontunarsida .pontunarform .efra-nedra-form {
+  margin-bottom: 2rem;
+}
 .pontunarsida .pontunarform .efra-nedra-form .vinstri-haegri-reitir {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--vertical-space);
+  margin-bottom: 1rem;
 }
 .pontunarsida .pontunarform .efra-nedra-form .vinstri-haegri-reitir .reitur {
   display: flex;
   flex-direction: column;
 }
 .pontunarsida .pontunarform .efra-nedra-form .vinstri-haegri-reitir .reitur input {
-  padding: 0.5rem;
+  padding: 0.5rem 0;
+  border: var(--border-small) solid var(--color-black-coffee);
   border-radius: var(--border-radius);
 }
+.pontunarsida .karfa {
+  font-size: var(--font-card-heading-size);
+}
+.pontunarsida .karfa .karfa-vara {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 3fr 2fr;
+  gap: var(--vertical-space);
+  border-bottom: var(--border-small) solid var(--color-coffee-with-milk);
+}
+.pontunarsida .karfa .karfa-vara:last-child {
+  align-content: end;
+}
+.pontunarsida .karfa .samtals {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: var(--font-family-bold);
+}
 .pontunarsida .karfa img {
-  width: 127px;
+  max-width: 100%;
+  max-height: 85px;
+  object-fit: cover;
 }
 
 /**Footer**/
@@ -209,7 +239,7 @@ html::before {
   /* Border breiddir */
   --border-small: 1px;
   --border-large: 8px;
-  --border-radius: 6px;
+  --border-radius: 5px;
   /* Litir */
   --color-coffee: #6a4f3a;
   --color-coffee-with-milk: #decec3;
@@ -220,7 +250,15 @@ html::before {
   --gutter: 30px;
   --offset: 20px;
   /* Letur stillingar */
-  --font-base-size: 1rem;
+  --font-small-size: 14px;
+  --font-body-size: 16px;
+  --font-large-body-size: 20px;
+  --font-card-heading-size: 22px;
+  --font-h2-size: 32px;
+  --font-h1-size: 36px;
+  --font-title-size: 60px;
+  --font-big-title-size: 80px;
+  --font-huge-title-size: 160px;
   --font-family-base: "Lato-Regular", Helvetica, Arial, sans-serif;
   --font-family-bold: "Lato-Bold", Helvetica, Arial, sans-serif;
   --font-family-logo: "Lora", Georgia, serif;
@@ -304,17 +342,21 @@ html::before {
 }
 @font-face {
   font-family: "Lato-Bold";
-  font-style: bold;
+  font-style: normal;
   font-display: swap;
   src: url(../fonts/Lato-Bold.ttf) format("woff");
 }
 h1, h2, h3 {
   font-family: var(--font-family-base);
+  margin-bottom: 1rem;
 }
 
 html {
-  font-size: var(--font-base-body-px);
   font-family: var(--font-family-base);
+}
+
+p {
+  font-size: var(--font-large-body-size);
 }
 
 /**Takkar**/
@@ -357,11 +399,14 @@ html {
   border-radius: 5px;
 }
 
-.button-send {
+.pontunarform .button {
   color: var(--color-light);
   background-color: var(--color-coffee);
-  padding: 0.5rem;
+  padding: 10px 15px;
+  border: var(--border-small) solid var(--color-coffee);
   border-radius: var(--border-radius);
+  margin-bottom: 2rem;
+  font-size: var(--font-large-body-size);
 }
 
 /*# sourceMappingURL=styles.css.map */

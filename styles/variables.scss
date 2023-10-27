@@ -15,7 +15,7 @@
     /* Border breiddir */
     --border-small: 1px;
     --border-large: 8px;
-    --border-radius: 6px;
+    --border-radius: 5px;
   
     /* Litir */
     --color-coffee: #6a4f3a;
@@ -29,7 +29,15 @@
     --offset: 20px;
   
     /* Letur stillingar */
-    --font-base-size: 1rem;
+    --font-small-size: 14px;
+    --font-body-size: 16px;
+    --font-large-body-size: 20px;
+    --font-card-heading-size: 22px;
+    --font-h2-size: 32px;
+    --font-h1-size: 36px;
+    --font-title-size: 60px;
+    --font-big-title-size: 80px;
+    --font-huge-title-size: 160px;
     --font-family-base: 'Lato-Regular', Helvetica, Arial, sans-serif;
     --font-family-bold: 'Lato-Bold', Helvetica, Arial, sans-serif;
     --font-family-logo: 'Lora', Georgia, serif;

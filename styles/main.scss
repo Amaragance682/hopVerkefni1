@@ -7,6 +7,10 @@
     width: var(--width-offset);
     max-width: var(--max-width);
     margin: auto;
+
+    h1 {
+        font-size: var(--font-title-size);
+      }
 }
 
 /*textar*/
