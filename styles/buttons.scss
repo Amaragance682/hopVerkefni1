@@ -1,11 +1,11 @@
 /**Takkar**/
-.boxes .box .button {
-    background-color: #FFFFFF;
-    border: solid black 1px;
+.button {
+    background-color: var(--color-light);
+    color: var(--color-black-coffee);
+    border: var(--border-small) solid var(--color-coffee);
     text-align: center;
-    display: inline;
-    padding: 9px;
-    border-radius: 5px;
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
 }
 
  .texti div .button {

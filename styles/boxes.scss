@@ -60,3 +60,10 @@
         font-size: 100px;
     }
 }
+
+/* Vöruupplýsingar á vara.html*/
+.um-voru {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--vertical-space);
+}

@@ -114,6 +114,8 @@
   grid-template-columns: 1fr 3fr 2fr;
   gap: var(--vertical-space);
   border-bottom: var(--border-small) solid var(--color-coffee-with-milk);
+  align-items: center;
+  padding: 0.5rem 0;
 }
 .pontunarsida .karfa .karfa-vara:last-child {
   align-content: end;
@@ -122,6 +124,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 0.5rem 0;
   font-family: var(--font-family-bold);
 }
 .pontunarsida .karfa img {
@@ -328,6 +331,13 @@ html::before {
   font-size: 100px;
 }
 
+/* Vöruupplýsingar á vara.html*/
+.um-voru {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--vertical-space);
+}
+
 @font-face {
   font-family: "Lora";
   font-style: normal;
@@ -360,13 +370,13 @@ p {
 }
 
 /**Takkar**/
-.boxes .box .button {
-  background-color: #FFFFFF;
-  border: solid black 1px;
+.button {
+  background-color: var(--color-light);
+  color: var(--color-black-coffee);
+  border: var(--border-small) solid var(--color-coffee);
   text-align: center;
-  display: inline;
-  padding: 9px;
-  border-radius: 5px;
+  padding: 10px 15px;
+  border-radius: var(--border-radius);
 }
 
 .texti div .button {
