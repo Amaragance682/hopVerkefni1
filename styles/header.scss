@@ -10,13 +10,17 @@
     width: 1px;
   }
 
+.htmlSida .header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/Assets/BackgroundOpacity.png');
+}
+
 .header {
     position: relative;
     width: calc(100% - (2 * var(--offset)));
     
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('/Assets/BackgroundOpacity.png');
+    
     
 
     width: 100%;
