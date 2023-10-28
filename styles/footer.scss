@@ -1,23 +1,25 @@
-/**Footer**/
-footer {
+
+ .footer {
+   background-color: var(--color-coffee);
+   padding: 3rem 0;
+   background-color: #3C2A1E;
+}
+
+.footer-boxes {
     display: grid;
-    text-align: left;
     grid-template-columns:repeat(3, 1fr);
-    gap: 1rem;
+    gap: var(--vertical-space);
     line-height: 25px;
-    width: 100%;
-
-    padding: 1rem;
-    
-    background-color: #3C2A1E;
-    color: white;
+    width: var(--width-offset);
+    margin: auto;
  }
 
- footer section p {
-    border-bottom: solid 2px #E1CEC2;
-    font-size: x-large;
+ .footer-box {
+   color: var(--color-light);
  }
 
- footer ul {
-    list-style: none;
+ .footer .footer-box .titill {
+   margin-bottom: calc(var(--spacing) * 0.5);
+   border-bottom: var(--border-small) solid var(--color-coffee-with-milk);
+   font-family: var(--font-family-base);
  }

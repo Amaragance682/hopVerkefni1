@@ -1,12 +1,50 @@
 /*box*/
+
+.containerForBoxes {
+    background-image: url(/Assets/BackgroundCoffee.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 674px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    align-items: center;
+
+    .titles {
+        margin-top: auto;
+        color: #000;
+
+        font-family: Lato;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 48px;
+    }
+    .boxes {
+        margin-bottom: auto;
+    }
+    
+
+    @media (min-width: 1450px) {
+        
+        
+      }
+}
+
+
 .boxes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    
+    
 
     gap: 25px;
     padding: 1rem;
-    margin-bottom: 15px;
     width: 100%;
+    flex-shrink: 0;
+    height: auto;
+    
+    align-items: center;
+
 }
 .boxes .box {
     display: grid;
@@ -15,35 +53,21 @@
 
     background-color: #FFFFFF;
     border-radius: 5px;
+
+    width: 330px;
+    min-width: 22%;
+    height: 360px;
 }
 
 .box .title {
     font-size: larger;
 }
 
-/*Kassar í vöru*/
-.kassi{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.kassi .minnibox {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.kassar {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin-left: 20%;    
-    margin-right: 20%;
-}
-
-.kassi .litilbox{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    margin: 5px;
-    width: 50%;
-    display: inline;
+.fill {
+    background-color: #3C2A1E;
+    position: absolute;  /* Stays fixed during scrolling */
+    z-index: -1;  /* Behind the content */
+    height: 400px;
+    width: 5000px;
+    bottom: 0;
 }
