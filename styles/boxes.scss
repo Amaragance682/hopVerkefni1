@@ -63,14 +63,7 @@
     font-size: larger;
 }
 
-.fill {
-    background-color: #3C2A1E;
-    position: absolute;  /* Stays fixed during scrolling */
-    z-index: -1;  /* Behind the content */
-    height: 400px;
-    width: 5000px;
-    bottom: 0;
-}
+
 
 /* Banner */
 .banner {

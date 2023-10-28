@@ -12,22 +12,34 @@
 </head>
 <body>
     <header class="header">
-        <div class="header-content">
-            <a class="logo-container" href="../index.html">
-                <img src="../myndir/Logo.png" alt="none">
-                <h1>Tæknibúðin</h1>
-                <p class="sr-only"><a href="#efni">Beint í efni</a></p>
-            </a>
-            <input class="search" type="text" name="Leit" id="Leit" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl.">
-            <nav class="nav">
-                <ul>
-                    <li class="link"><a href="voruListi.html">Nýjar vörur</a></li>
-                    <li class="link"><a href="voruListi.html">Tilboðs vörur</a></li>
-                    <li class="link"><a href="voruListi.html">Allar vörur</a></li>    
-                    <li><a href="pontunarSida.html"><img class="cart" src="../myndir/Cart_icon.png" alt="none"></a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="nav">
+
+            <div class="logo-container">
+              <img src="/myndir/Logo.png" alt="none" />
+              <h1>Tæknibúðin</h1>
+              <p class="sr-only"><a href="#efni">Beint í efni</a></p>
+            </div>
+    
+            <div class="search">
+              <input
+              type="search"
+              name="Leit"
+              id="Leit"
+              placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl."/>
+    
+              
+            </div>
+    
+            <div class="categories">
+                <a href="voruListi.html">Nýjar vörur</a>
+                <a href="vara.html">Tilboðsvörur</a>
+                <a href="pontunarSida.html">Allar vörur</a>
+            </div>
+    
+            <div class="cart">
+              <a href="/Sites/pontunarSida.html"><img src="/Assets/Cart.png" alt="none" /></a>
+            </div>
+        </nav>
     </header>
     <main class="main" id="efni">
         <h1>Pöntun</h1>
@@ -100,16 +112,17 @@
         </div>
     </main>
     <footer class="footer">
+        
         <div class="footer-boxes">
             <div class="footer-box">
                 <h2 class="titill">OPNUNARTÍMI</h2>
                 <dl>
                     <dt>Opið alla virka daga frá 9:00-18:00</dt>
                     <dd>Opið á laugardögum frá 12:00-16:00</dd>
-                    <dd>Lokað á sunnudögum</dd>
+                    <dd>Lokað á Sunnudögum</dd>
                 </dl>
-            </div>    
-            <div class="footer-box">  
+            </div>
+            <div class="footer-box">
                 <h2 class="titill">HAFÐU SAMBAND</h2>
                 <dl>
                     <dt>Skiptiborð: 234-4568</dt>
@@ -126,6 +139,9 @@
                 </dl>
             </div>
         </div>
+      <div class="footer-footer">
+        © 2021 TÆKNIBÚÐIN — Allur réttur áskilinn
+      </div>
     </footer>
 </body>
 </html>

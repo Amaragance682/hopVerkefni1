@@ -8,9 +8,10 @@
       to right,
       var(--grid-color),
       var(--grid-color) var(--grid-column-width),
-      /* transparent var(--grid-column-width),
-      transparent var(--grid-repeating-width) */
+      transparent var(--grid-column-width),
+      transparent var(--grid-repeating-width) 
     );
+
   }
   
   html {

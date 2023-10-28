@@ -1,8 +1,8 @@
 
 /**Footer**/
 .footer {
-   background-color: var(--color-coffee);
-   padding: 3rem 0;
+    background-color: #3C2A1E;
+    padding: 3rem 0;
 }
 
 .footer-boxes {
@@ -20,6 +20,42 @@
 
  .footer .footer-box .titill {
    margin-bottom: calc(var(--spacing) * 0.5);
-   border-bottom: var(--border-small) solid var(--color-coffee-with-milk);
+   border-bottom: 2px solid var(--color-coffee-with-milk);
    font-family: var(--font-family-base);
  }
+
+ .footer-footer {
+  text-align: center; /* Align text to the center */
+  margin-top: 20px; 
+  display: flex;
+  padding-top: 1px;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  
+  
+
+  
+ }
+
+ .footer-footer::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 2px;
+    background: #6F4E37;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+ 
+ 
+ .fill {
+  background-color: #3C2A1E;
+  position: absolute;  /* Stays fixed during scrolling */
+  z-index: -1;  /* Behind the content */
+  height: 400px;
+  width: 100%;
+  bottom: 0;
+}

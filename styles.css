@@ -48,6 +48,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 40px; /* 100% */
+  margin-bottom: 0rem;
 }
 .nav .search {
   position: relative;
@@ -61,7 +62,6 @@
   height: 10px;
   background: #FEFEFE;
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 .nav .search::after {
@@ -129,9 +129,9 @@
   background-color: var(--coffee-with-milk);
   margin-top: 2rem;
   padding-top: 5px;
-  width: var(--width-offset);
-  max-width: var(--max-width);
-  margin: auto;
+  /* width: var(--width-offset); */
+  /*  max-width: var(--max-width); */
+  /* margin: auto; */
 }
 .main h1 {
   font-size: var(--font-title-size);
@@ -232,6 +232,9 @@
   align-items: flex-start;
   gap: 10px;
   border-radius: 5px;
+  border: 1px solid #3C2A1E;
+  color: white;
+  background: #6F4E37;
 }
 
 .pontunarsida {
@@ -287,7 +290,7 @@
 
 /**Footer**/
 .footer {
-  background-color: var(--color-coffee);
+  background-color: #3C2A1E;
   padding: 3rem 0;
 }
 
@@ -295,14 +298,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--vertical-space);
-  gap: var(--vertical-space);
   line-height: 25px;
-  width: var(--width-offset);
-  margin: auto;
-}
-
-.footer-box {
-  color: var(--color-light);
   width: var(--width-offset);
   margin: auto;
 }
@@ -313,23 +309,40 @@
 
 .footer .footer-box .titill {
   margin-bottom: calc(var(--spacing) * 0.5);
-  border-bottom: var(--border-small) solid var(--color-coffee-with-milk);
+  border-bottom: 2px solid var(--color-coffee-with-milk);
   font-family: var(--font-family-base);
 }
 
-.nav ul {
+.footer-footer {
+  text-align: center; /* Align text to the center */
+  margin-top: 20px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  list-style: none;
+  padding-top: 1px;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
 }
 
-/*
-ul:last-child {
-  position: absolute;
-  right: 0;
-}*/
+.footer-footer::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 2px;
+  background: #6F4E37;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.fill {
+  background-color: #3C2A1E;
+  position: absolute; /* Stays fixed during scrolling */
+  z-index: -1; /* Behind the content */
+  height: 400px;
+  width: 100%;
+  bottom: 0;
+}
+
 /* Reset og border-box á allt */
 * {
   margin: 0;
@@ -489,28 +502,46 @@ p {
   font-size: larger;
 }
 
-.fill {
-  background-color: #3C2A1E;
-  position: absolute; /* Stays fixed during scrolling */
-  z-index: -1; /* Behind the content */
-  height: 400px;
-  width: 5000px;
-  bottom: 0;
+/* Banner */
+.banner {
+  display: grid;
+  grid-template-rows: 2;
+  justify-items: center;
+  align-items: center;
+}
+.banner h1 {
+  font-family: var(--font-family-bold);
+  font-size: 100px;
 }
 
-/* https://css-tricks.com/building-css-grid-overlay/ */
-:root {
-  --grid-color: hsla(0, 75%, 75%, 0.25);
-  --grid-repeating-width: calc(100% / var(--columns));
-  --grid-column-width: calc((100% / var(--columns)) - var(--gutter));
-  --grid-background-width: calc(100% + var(--gutter));
-  --grid-background-columns: repeating-linear-gradient(
-    to right,
-    var(--grid-color),
-    var(--grid-color) var(--grid-column-width),
-    transparent var(--grid-column-width),
-    transparent var(--grid-repeating-width)
-  );
+/* Vöruupplýsingar á vara.html*/
+.um-voru {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--vertical-space);
+}
+
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/Lora-VariableFont_wght.ttf) format("woff");
+}
+@font-face {
+  font-family: "Lato-Regular";
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/Lato-Regular.ttf) format("woff");
+}
+@font-face {
+  font-family: "Lato-Bold";
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/Lato-Bold.ttf) format("woff");
+}
+h1, h2, h3 {
+  font-family: var(--font-family-base);
+  margin-bottom: 1rem;
 }
 
 html {
