@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-display: swap;
+    src: url(../fonts/Lora-VariableFont_wght.ttf) format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Lato-Regular';
+    font-style: normal;
+    font-display: swap;
+    src: url(../fonts/Lato-Regular.ttf) format('woff');
+  }
+
+  @font-face {
+    font-family: 'Lato-Bold';
+    font-style: normal;
+    font-display: swap;
+    src: url(../fonts/Lato-Bold.ttf) format('woff');
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-family-base);
+    margin-bottom: 1rem;
+  }
+
+  html {
+    font-family: var(--font-family-base);
+  }
+
+  p {
+    font-size: var(--font-large-body-size);
+  }
+
+  

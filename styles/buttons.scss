@@ -1,14 +1,14 @@
 /**Takkar**/
-.boxes .box button {
-    background-color: #FFFFFF;
-    border: solid black 1px;
+.button {
+    background-color: var(--color-light);
+    color: var(--color-black-coffee);
+    border: var(--border-small) solid var(--color-coffee);
     text-align: center;
-    display: inline;
-    padding: 9px;
-    border-radius: 5px;
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
 }
 
- .texti div button {
+ .texti div .button {
     background-color: #6F4E37;
     color: #fefeff;
     border-radius: 5px;
@@ -39,4 +39,14 @@
     background-color: #E1CEC2;
     padding: 4px;
     border-radius: 5px;
+}
+
+.pontunarform .button {
+    color: var(--color-light);
+    background-color: var(--color-coffee);
+    padding: 10px 15px;
+    border: var(--border-small) solid var(--color-coffee);
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+    font-size: var(--font-large-body-size);
 }

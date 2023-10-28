@@ -71,3 +71,23 @@
     width: 5000px;
     bottom: 0;
 }
+
+/* Banner */
+.banner {
+    display: grid;
+    grid-template-rows: 2;
+    justify-items: center;
+    align-items: center;
+
+    h1 {
+        font-family: var(--font-family-bold);
+        font-size: 100px;
+    }
+}
+
+/* Vöruupplýsingar á vara.html*/
+.um-voru {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--vertical-space);
+}

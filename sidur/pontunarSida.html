@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pöntunarsíða</title>
+    <link rel="stylesheet" href="../styles.css">
+    <meta name="description" content="Forsíða Tæknibúðarinnar, keyptu græjurnar hjá okkur!">
+    <meta property="og:title" content="Tæknibúðin">
+    <meta property="og:description" content="Velkomin í Tæknibúðina!">
+    <meta property="og:image" content="./myndir/sharing.jpg">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a class="logo-container" href="../index.html">
+                <img src="../myndir/Logo.png" alt="none">
+                <h1>Tæknibúðin</h1>
+                <p class="sr-only"><a href="#efni">Beint í efni</a></p>
+            </a>
+            <input class="search" type="text" name="Leit" id="Leit" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl.">
+            <nav class="nav">
+                <ul>
+                    <li class="link"><a href="voruListi.html">Nýjar vörur</a></li>
+                    <li class="link"><a href="voruListi.html">Tilboðs vörur</a></li>
+                    <li class="link"><a href="voruListi.html">Allar vörur</a></li>    
+                    <li><a href="pontunarSida.html"><img class="cart" src="../myndir/Cart_icon.png" alt="none"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main" id="efni">
+        <h1>Pöntun</h1>
+        <div class="pontunarsida">
+            <div class="pontunarform">
+                <div class="efra-nedra-form">
+                    <h2>Kaupandi</h2>
+                    <div class="vinstri-haegri-reitir">
+                        <div class="reitur">
+                            <label for="name">Nafn</label>
+                            <input id="name" type="text">
+                        </div>
+                        <div class="reitur">
+                            <label for="email">Netfang</label>
+                            <input id="email" name="email" type="email">
+                        </div>
+                    </div>
+                    <div class="vinstri-haegri-reitir">
+                        <div class="reitur">
+                            <label for="id">Kennitala</label>
+                            <input type="text" id="id">
+                        </div>
+                        <div class="reitur">
+                            <label for="phone">Sími</label>
+                            <input id="phone" type="tel">
+                        </div>
+                    </div>
+                </div>
+                <div class="efra-nedra-form">
+                    <h2>Afhending</h2>
+                    <div class="vinstri-haegri-reitir">
+                        <div class="reitur">
+                            <label for="address">Heimilisfang</label>
+                            <input id="address" type="text">
+                        </div>
+                        <div class="reitur">
+                            <label for="place">Netfang</label>
+                            <input id="place" type="text">
+                        </div>
+                    </div>
+                    <div class="vinstri-haegri-reitir">
+                        <div class="reitur">
+                            <label for="place">Póstnúmer</label>
+                            <input type="text" id="place">
+                        </div>
+                        <div class="reitur">
+                            <label for="other">Athugasemd</label>
+                            <input id="other" type="text">
+                        </div>
+                    </div>
+                </div>
+                <button class="button">SENDA PÖNTUN</button>
+            </div>
+            <div class="karfa">
+                <div class="karfa-vara">
+                    <a href="vara.html"><img src="../myndir/robot.png" alt="none"></a>
+                    <a href="vara.html"><p>Vinalegur vinnuróbot</p></a>
+                    <p>1.499.990 kr.</p>
+                </div>
+                <div class="karfa-vara">
+                    <a href="vara.html"><img src="../myndir/Modurbord.png" alt="none"></a>
+                    <a href="vara.html"><p>Tæknilegt móðurborð</p></a>
+                    <p>189.000 kr.</p>
+                </div>
+                <div class="samtals">
+                    <p>Samtals</p>
+                    <p>1.688.990 kr.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-boxes">
+            <div class="footer-box">
+                <h2 class="titill">OPNUNARTÍMI</h2>
+                <dl>
+                    <dt>Opið alla virka daga frá 9:00-18:00</dt>
+                    <dd>Opið á laugardögum frá 12:00-16:00</dd>
+                    <dd>Lokað á sunnudögum</dd>
+                </dl>
+            </div>    
+            <div class="footer-box">  
+                <h2 class="titill">HAFÐU SAMBAND</h2>
+                <dl>
+                    <dt>Skiptiborð: 234-4568</dt>
+                    <dd>Tölvupóstur: thjonusta@example.org</dd>
+                </dl>
+            </div>
+            <div class="footer-box">
+            <h2 class="titill">ANNAÐ</h2>
+                <dl>
+                    <dt>Rekja sendingu</dt>
+                    <dd>Skilaréttur</dd>
+                    <dd>Um okkur</dd>
+                    <dd>Störf</dd>
+                </dl>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

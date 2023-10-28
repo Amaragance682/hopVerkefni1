@@ -1,7 +1,16 @@
 /*Main*/
 .main{
+    background-color: var(--coffee-with-milk);
     margin-top: 2rem;
     padding-top: 5px;
+
+    width: var(--width-offset);
+    max-width: var(--max-width);
+    margin: auto;
+
+    h1 {
+        font-size: var(--font-title-size);
+      }
 }
 
 /*textar*/

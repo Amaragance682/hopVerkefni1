@@ -61,6 +61,7 @@
   height: 10px;
   background: #FEFEFE;
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 .nav .search::after {
@@ -125,8 +126,15 @@
 
 /*Main*/
 .main {
+  background-color: var(--coffee-with-milk);
   margin-top: 2rem;
   padding-top: 5px;
+  width: var(--width-offset);
+  max-width: var(--max-width);
+  margin: auto;
+}
+.main h1 {
+  font-size: var(--font-title-size);
 }
 
 /*textar*/
@@ -224,22 +232,77 @@
   align-items: flex-start;
   gap: 10px;
   border-radius: 5px;
-  border: 1px solid #3C2A1E;
-  color: white;
-  background: #6F4E37;
 }
 
+.pontunarsida {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--vertical-space);
+}
+.pontunarsida .pontunarform .efra-nedra-form {
+  margin-bottom: 2rem;
+}
+.pontunarsida .pontunarform .efra-nedra-form .vinstri-haegri-reitir {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--vertical-space);
+  margin-bottom: 1rem;
+}
+.pontunarsida .pontunarform .efra-nedra-form .vinstri-haegri-reitir .reitur {
+  display: flex;
+  flex-direction: column;
+}
+.pontunarsida .pontunarform .efra-nedra-form .vinstri-haegri-reitir .reitur input {
+  padding: 0.5rem 0;
+  border: var(--border-small) solid var(--color-black-coffee);
+  border-radius: var(--border-radius);
+}
+.pontunarsida .karfa {
+  font-size: var(--font-card-heading-size);
+}
+.pontunarsida .karfa .karfa-vara {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 3fr 2fr;
+  gap: var(--vertical-space);
+  border-bottom: var(--border-small) solid var(--color-coffee-with-milk);
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.pontunarsida .karfa .karfa-vara:last-child {
+  align-content: end;
+}
+.pontunarsida .karfa .samtals {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  font-family: var(--font-family-bold);
+}
+.pontunarsida .karfa img {
+  max-width: 100%;
+  max-height: 85px;
+  object-fit: cover;
+}
+
+/**Footer**/
 .footer {
   background-color: var(--color-coffee);
   padding: 3rem 0;
-  background-color: #3C2A1E;
 }
 
 .footer-boxes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--vertical-space);
+  gap: var(--vertical-space);
   line-height: 25px;
+  width: var(--width-offset);
+  margin: auto;
+}
+
+.footer-box {
+  color: var(--color-light);
   width: var(--width-offset);
   margin: auto;
 }
@@ -262,6 +325,11 @@
   list-style: none;
 }
 
+/*
+ul:last-child {
+  position: absolute;
+  right: 0;
+}*/
 /* Reset og border-box á allt */
 * {
   margin: 0;
@@ -276,6 +344,12 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  background-color: inherit;
+  text-decoration: none;
 }
 
 /* https://css-tricks.com/building-css-grid-overlay/ */
@@ -338,20 +412,29 @@ p {
   /* Border breiddir */
   --border-small: 1px;
   --border-large: 8px;
-  --border-radius: 6px;
+  --border-radius: 5px;
   /* Litir */
-  --color-gold: #ffe7ae;
-  --color-gold-light: #fff1cf;
-  --color-dark: #2f0505;
-  --color-light: #fff9ee;
+  --color-coffee: #6a4f3a;
+  --color-coffee-with-milk: #decec3;
+  --color-black-coffee: #392b20;
+  --color-light: #fefefe;
   /* Grid stillingar */
   --columns: 12;
   --gutter: 30px;
   --offset: 20px;
   /* Letur stillingar */
-  --font-base-size: 1rem;
-  --font-family-base: "Noto Sans Display", Helvetica, Arial, sans-serif;
-  --font-family-heading: "Lora", Georgia, serif;
+  --font-small-size: 14px;
+  --font-body-size: 16px;
+  --font-large-body-size: 20px;
+  --font-card-heading-size: 22px;
+  --font-h2-size: 32px;
+  --font-h1-size: 36px;
+  --font-title-size: 60px;
+  --font-big-title-size: 80px;
+  --font-huge-title-size: 160px;
+  --font-family-base: "Lato-Regular", Helvetica, Arial, sans-serif;
+  --font-family-bold: "Lato-Bold", Helvetica, Arial, sans-serif;
+  --font-family-logo: "Lora", Georgia, serif;
   /* Transitions */
   --transition-time-short: 300ms;
   --transition-time-long: 600ms;
@@ -425,44 +508,30 @@ p {
     to right,
     var(--grid-color),
     var(--grid-color) var(--grid-column-width),
-    /* transparent var(--grid-column-width),
-    transparent var(--grid-repeating-width) */
+    transparent var(--grid-column-width),
+    transparent var(--grid-repeating-width)
   );
 }
 
 html {
-  position: relative;
+  font-family: var(--font-family-base);
 }
 
-html::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin-right: auto;
-  margin-left: auto;
-  width: calc(100% - 2 * var(--offset));
-  max-width: var(--max-width);
-  min-height: 100vh;
-  background-image: var(--grid-background-columns);
-  background-size: var(--grid-background-width) 100%;
-  z-index: 1000;
-  pointer-events: none;
+p {
+  font-size: var(--font-large-body-size);
 }
 
 /**Takkar**/
-.boxes .box button {
-  background-color: #FFFFFF;
-  border: solid black 1px;
+.button {
+  background-color: var(--color-light);
+  color: var(--color-black-coffee);
+  border: var(--border-small) solid var(--color-coffee);
   text-align: center;
-  display: inline;
-  padding: 9px;
-  border-radius: 5px;
+  padding: 10px 15px;
+  border-radius: var(--border-radius);
 }
 
-.texti div button {
+.texti div .button {
   background-color: #6F4E37;
   color: #fefeff;
   border-radius: 5px;
@@ -490,6 +559,16 @@ html::before {
   background-color: #E1CEC2;
   padding: 4px;
   border-radius: 5px;
+}
+
+.pontunarform .button {
+  color: var(--color-light);
+  background-color: var(--color-coffee);
+  padding: 10px 15px;
+  border: var(--border-small) solid var(--color-coffee);
+  border-radius: var(--border-radius);
+  margin-bottom: 2rem;
+  font-size: var(--font-large-body-size);
 }
 
 /*# sourceMappingURL=styles.css.map */

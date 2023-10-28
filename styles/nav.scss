@@ -1,7 +1,12 @@
 .nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    list-style: none;
-  }
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  align-items: center;
+  list-style: none;
+}
+
+/*
+ul:last-child {
+  position: absolute;
+  right: 0;
+}*/
