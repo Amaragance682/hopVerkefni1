@@ -59,6 +59,117 @@
     height: 360px;
 }
 
+.main-voruListi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    gap: 25px;
+    padding: 1rem;
+    width: 100%;
+    flex-shrink: 0;
+    height: auto;
+    
+    align-items: center;
+    padding-bottom: 2rem;
+
+
+
+    div {
+        display: grid;
+        justify-self: center;
+        padding: 10px;
+
+        background-color: #FFFFFF;
+        border-radius: 5px;
+
+        width: 330px;
+        min-width: 22%;
+        height: 360px;
+
+        li {
+            list-style-type: none;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            height: 26px;
+
+            li {
+                background-color: #E1CEC2;
+                border-radius: 5px;
+            }
+        }
+
+        
+
+    }
+}
+
+
+.tengdar {
+    background-color: #E1CEC2;
+    width: 100%;
+    h2{
+        padding-left: 15px;
+    }
+
+
+}
+
+.tengdar .boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    gap: 25px;
+    padding: 1rem;
+    width: 100%;
+    flex-shrink: 0;
+    height: auto;
+    
+    align-items: center;
+    padding-bottom: 2rem;
+
+    .box {
+        display: grid;
+        justify-self: center;
+        padding: 10px;
+
+        background-color: #FFFFFF;
+        border-radius: 5px;
+
+        width: 330px;
+        min-width: 22%;
+        height: 360px;
+
+        li {
+            list-style-type: none;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            height: 26px;
+
+            li {
+                background-color: #E1CEC2;
+                border-radius: 5px;
+            }
+        }
+
+        
+
+    }
+}
+
+
+
+
+
+
+
 .box .title {
     font-size: larger;
 }
@@ -84,3 +195,27 @@
     grid-template-columns: repeat(2, 1fr);
     gap: var(--vertical-space);
 }
+
+
+@media (max-width: 500px) {
+        .boxes {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+        gap: 25px;
+        padding: 1rem;
+        width: 100%;
+        flex-shrink: 0;
+        height: auto;
+        
+        align-items: center;
+        padding-bottom: 2rem;
+    
+    
+            
+    
+        }
+    }  
+
+
+

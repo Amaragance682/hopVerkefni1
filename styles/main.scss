@@ -13,6 +13,34 @@
       }
 }
 
+
+.main-voruListi {
+    background-color: var(--coffee-with-milk);
+    margin-top: 2rem;
+    padding-top: 5px;
+
+    display: grid;
+}
+
+.main-vara {
+    margin-top: 2rem;
+    padding-top: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+
+}
+
+.main-panta {
+    margin: 1rem;
+    padding-top: 5px;
+
+
+    
+}
+
 /*textar*/
 .titles {
     font-size: x-large;
@@ -67,6 +95,10 @@
         font-style: normal;
         line-height: 32px; /* 160% */
     }
+}
+
+.radaEftir {
+    padding: 0px 15px;
 }
 
 .texti2 .imgFlugvel2 {

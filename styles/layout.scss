@@ -1,1 +1,54 @@
 //hér þurfum við að skilgreyna öll gildi þannig við getum kallað á þau t.d. liturinn #8ca0ff = er breytan background color eða space = 1rem
+.vara-upplysingar {
+    padding: 10px;
+    ul {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        flex-shrink: 0;
+        li{
+            background-color: #E1CEC2;
+            border-radius: 5px;
+            list-style-type: none;
+            padding: 5px;
+        }
+    }
+
+    .price-and-button {
+        margin-top: 2rem;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+
+        button{
+            width: 330px;
+        }
+    }
+
+    
+}
+
+.vara-mynd {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+
+.lysingar {
+    display: flex;
+    padding: 60px 255px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+
+    .lysing h3 {
+        padding-top: 20px;
+        margin-bottom: 0px;
+        font-size: 36px;
+    }
+}
+
+
+
