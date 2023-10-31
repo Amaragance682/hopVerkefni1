@@ -8,44 +8,42 @@
   <meta name="description" content="Forsíða Tæknibúðarinnar, keyptu græjurnar hjá okkur!">
   <meta property="og:title" content="Tæknibúðin">
   <meta property="og:description" content="Velkomin í Tæknibúðina!">
-  <meta property="og:image" content="./myndir/sharing.jpg">
+  <meta property="og:image" content="../Assets/flugvel.png">
 </head>
 
 <body>
     <header class="header-vara">
         <nav class="nav">
-
             <div class="logo-container">
-                <img src="/myndir/Logo.png" alt="none" />
-              <h1>Tæknibúðin</h1>
+              <a href="../index.html"><img src="../Assets/Logo.png" alt="none" /></a>
+              <a href="../index.html"><h1>Tæknibúðin</h1></a>
               <p class="sr-only"><a href="#efni">Beint í efni</a></p>
             </div>
-    
+  
             <div class="search">
               <input
               type="search"
               name="Leit"
               id="Leit"
               placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl."/>
-    
-              
             </div>
-    
-            <div class="categories">
-                <a href="/index.html">Nýjar vörur</a>
-                <a href="vara.html">Tilboðsvörur</a>
-                <a href="voruListi.html">Allar vörur</a>    
-            </div>
-    
-            <div class="cart">
-              <a href="pontunarSida.html"><img src="/Assets/Cart.png" alt="none" /></a>
+  
+            <div class="right-nav-bar">
+              <div class="categories">
+                <a href="voruListi.html">Nýjar vörur</a>
+                <a href="voruListi.html">Tilboðsvörur</a>
+                <a href="voruListi.html">Allar vörur</a>
+              </div>
+              <div class="icons">
+                <a href="pontunarSida.html"><img class="cart" src="../Assets/Cart.png" alt="none" /></a>
+                <img class="hamburger" src="../Assets/Hamburger_icon.png" alt="none" />
+              </div>
             </div>
         </nav>
     </header>
     <main class="main-vara" id="efni">
         <div class="um-voru">
-            <img class="vara-mynd" src="../myndir/Modurbord.png" alt="none">
-
+            <img class="vara-mynd" src="../Assets/Modurbord.png" alt="none">
 
             <div class="vara-upplysingar">
                 <h1>Tæknilegt móðurborð</h1>
@@ -61,7 +59,7 @@
                 </p>
                 <div class="price-and-button">
                     <p>189.000 kr.</p>
-                    <button class="button">Setja í körfu</button>
+                    <button class="voruTakki">Setja í körfu</button>
                 </div>  
             </div>
         </div>
@@ -96,24 +94,24 @@
             <h2>Tengdar vörur</h2>
             <div class="boxes">
                 <div class="box">
-                    <img src="../myndir/robot.png" alt="none">
-                    <p>Vinalegur vinnuróbot</p>
-                        <ul>
-                            <li>Nýtt</li>
-                            <li>Ekki fyrir börn</li>
-                        </ul>
+                    <a href="vara.html"><img src="../Assets/robot.png" alt="none" /></a>
+                    <a href="vara.html"><p class="title">Vinalegur vinnuróbot</p></a>
+                    <div class="litilbox">
+                    <p class="litidbox">Nýtt</p>
+                    <p class="litidbox">Ekki fyrir börn</p>
+                    </div>
                     <p>1.499.990 kr.</p>
-                    <button>SETJA Í KÖRFU</button>
+                    <button class="voruTakki">SETJA Í KÖRFU</button>
                 </div>
                 <div class="box">
-                    <img src="../myndir/Matrixid.png" alt="none">
-                    <p>Matrixið</p>
-                    <ul>
-                        <li>Nýtt</li>
-                        <li>Ekki fyrir róbóta</li>
-                    </ul>
-                    <p>299.999.999.499.990 kr.</p>    
-                    <button>SETJA Í KÖRFU</button>
+                    <a href="vara.html"><img src="../Assets/Matrixid.png" alt="none" /></a>
+                    <a href="vara.html"><p class="title">Matrixið</p></a>
+                    <div class="litilbox">
+                      <p class="litidbox">Nýtt</p>
+                      <p class="litidbox">Ekki fyrir róbóta</p>
+                    </div>
+                    <p>299.999.999.499.990 kr.</p>
+                    <button class="voruTakki">SETJA Í KÖRFU</button>
                 </div>
             </div>
         </div>

@@ -4,25 +4,16 @@
     background-image: url(/Assets/BackgroundCoffee.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 674px;
-    display: grid;
-    grid-template-columns: 1fr ;
     align-items: center;
 
     .titles {
         margin-top: auto;
+        margin-bottom: calc(2 * var(--spacing));
         color: #000;
 
-        font-family: Lato;
         font-size: 36px;
-        font-style: normal;
-        font-weight: 400;
         line-height: 48px;
     }
-    .boxes {
-        margin-bottom: auto;
-    }
-    
 
     @media (min-width: 1450px) {
         
@@ -30,36 +21,83 @@
       }
 }
 
-
 .boxes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
-    
+    width: var(--width-offset);
+    max-width: var(--max-width);
+    margin: 0 auto;
 
-    gap: 25px;
-    padding: 1rem;
-    width: 100%;
-    flex-shrink: 0;
-    height: auto;
-    
-    align-items: center;
+    gap: var(--vertical-space);
+    /*flex-shrink: 0;
+    height: auto;*/
 
 }
+
 .boxes .box {
     display: grid;
-    justify-self: center;
-    padding: 10px;
+    align-items: center;
+    gap: var(--spacing);
+
+    padding: 15px;
 
     background-color: #FFFFFF;
     border-radius: 5px;
 
-    width: 330px;
+    /*width: 330px;
     min-width: 22%;
-    height: 360px;
+    height: 360px;*/
 }
 
-.main-voruListi {
+.boxes .box img {
+    width: 100%;
+}
+
+@media (min-width: 330px){
+    .boxes {
+        grid-template-columns: repeat(var(--columns), 1fr);
+        grid-template-rows: auto;
+    }
+
+    .boxes .box {
+        grid-column: span 12;
+    }
+}
+
+@media (min-width: 690px){
+    .boxes {
+        grid-template-columns: repeat(var(--columns), 1fr);
+        grid-template-rows: auto;
+    }
+
+    .boxes .box {
+        grid-column: span 6;
+    }
+}
+
+@media (min-width: 1050px){
+    .boxes {
+        grid-template-columns: repeat(var(--columns), 1fr);
+        grid-template-rows: auto;
+    }
+
+    .boxes .box {
+        grid-column: span 4;
+    }
+}
+
+@media (min-width: 1410px){
+    .boxes {
+        grid-template-columns: repeat(var(--columns), 1fr);
+        grid-template-rows: auto;
+    }
+
+    .boxes .box {
+        grid-column: span 3;
+    }
+}
+
+/*.main-voruListi {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     
@@ -105,24 +143,25 @@
         
 
     }
-}
+}*/
 
 
 .tengdar {
     background-color: #E1CEC2;
     width: 100%;
+
     h2{
-        padding-left: 15px;
+        width: var(--width-offset);
+        margin: 2rem auto;
+        font-size: var(--font-h2-size);
     }
 
 
 }
 
-.tengdar .boxes {
+/*.tengdar .boxes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
-    gap: 25px;
     padding: 1rem;
     width: 100%;
     flex-shrink: 0;
@@ -133,10 +172,10 @@
 
     .box {
         display: grid;
-        justify-self: center;
-        padding: 10px;
+        padding: 15px;
+        justify-content: space-between;
 
-        background-color: #FFFFFF;
+        background-color: var(--color-light);
         border-radius: 5px;
 
         width: 330px;
@@ -162,12 +201,7 @@
         
 
     }
-}
-
-
-
-
-
+}*/
 
 
 .box .title {
@@ -189,14 +223,7 @@
     }
 }
 
-/* Vöruupplýsingar á vara.html*/
-.um-voru {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--vertical-space);
-}
-
-
+/*
 @media (max-width: 500px) {
         .boxes {
         display: grid;
@@ -215,7 +242,7 @@
             
     
         }
-    }  
+    }  */
 
 
 

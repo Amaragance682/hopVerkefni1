@@ -59,3 +59,15 @@
   width: 100%;
   bottom: 0;
 }
+
+
+@media (max-width: 689px) {
+  .footer-boxes {
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: auto;
+  }
+
+  .footer-box {
+    grid-column: span 12;
+  }
+}

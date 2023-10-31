@@ -21,10 +21,10 @@
 
   h1, h2, h3 {
     font-family: var(--font-family-base);
-    margin-bottom: 1rem;
+    margin-bottom: calc(2*var(--spacing));
   }
 
-  html {
+  html, p {
     font-family: var(--font-family-base);
   }
 
@@ -32,4 +32,7 @@
     font-size: var(--font-large-body-size);
   }
 
-  
+  button {
+    font-family: var(--font-family-bold);
+    font-size: var(--font-small-size);
+  }

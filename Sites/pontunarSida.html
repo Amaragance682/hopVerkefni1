@@ -8,36 +8,35 @@
     <meta name="description" content="Forsíða Tæknibúðarinnar, keyptu græjurnar hjá okkur!">
     <meta property="og:title" content="Tæknibúðin">
     <meta property="og:description" content="Velkomin í Tæknibúðina!">
-    <meta property="og:image" content="./myndir/sharing.jpg">
+    <meta property="og:image" content="../Assets/flugvel.png">
 </head>
 <body>
     <header class="header-panta">
         <nav class="nav">
-
             <div class="logo-container">
-              <img src="/myndir/Logo.png" alt="none" />
-              <h1>Tæknibúðin</h1>
+              <a href="../index.html"><img src="../Assets/Logo.png" alt="none" /></a>
+              <a href="../index.html"><h1>Tæknibúðin</h1></a>
               <p class="sr-only"><a href="#efni">Beint í efni</a></p>
             </div>
-    
+  
             <div class="search">
               <input
               type="search"
               name="Leit"
               id="Leit"
               placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl."/>
-    
-              
             </div>
-    
-            <div class="categories">
+  
+            <div class="right-nav-bar">
+              <div class="categories">
                 <a href="voruListi.html">Nýjar vörur</a>
-                <a href="vara.html">Tilboðsvörur</a>
-                <a href="pontunarSida.html">Allar vörur</a>
-            </div>
-    
-            <div class="cart">
-              <a href="/Sites/pontunarSida.html"><img src="/Assets/Cart.png" alt="none" /></a>
+                <a href="voruListi.html">Tilboðsvörur</a>
+                <a href="voruListi.html">Allar vörur</a>
+              </div>
+              <div class="icons">
+                <a href="pontunarSida.html"><img class="cart" src="../Assets/Cart.png" alt="none" /></a>
+                <img class="hamburger" src="../Assets/Hamburger_icon.png" alt="none" />
+              </div>
             </div>
         </nav>
     </header>
@@ -91,32 +90,24 @@
                         </div>
                     </div>
                 </div>
-                <button class="button">SENDA PÖNTUN</button>
             </div>
             <div class="karfa">
 
                 <div class="karfa-vara">
-
-                    <div class="myndinn">
+                    <div class="myndin">
                         <a href="vara.html"><img src="../myndir/robot.png" alt="none"></a>
                     </div>
                     <a href="vara.html"><p>Vinalegur vinnuróbot</p></a>
                     <p>1.499.990 kr.</p>
                 </div>
 
-
-
-
                 <div class="karfa-vara">
-                    
-                    <div class="myndinn">
+                    <div class="myndin">
                         <a href="vara.html"><img src="../myndir/Modurbord.png" alt="none"></a>
                     </div>
                     <a href="vara.html"><p>Tæknilegt móðurborð</p></a>
                     <p>189.000 kr.</p>
                 </div>
-
-
 
                 <div class="samtals">
                     <p>Samtals</p>
@@ -124,6 +115,7 @@
                 </div>
             </div>
         </div>
+        <button class="button">SENDA PÖNTUN</button>
     </main>
     <footer class="footer">
         

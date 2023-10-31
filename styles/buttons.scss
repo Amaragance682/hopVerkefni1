@@ -1,11 +1,12 @@
 /**Takkar**/
-.button {
+.voruTakki {
     background-color: var(--color-light);
     color: var(--color-black-coffee);
     border: var(--border-small) solid var(--color-coffee);
     text-align: center;
-    padding: 10px 15px;
+    padding: 15px 10px;
     border-radius: var(--border-radius);
+    font-family: var(--font-family-bold);
 }
 
  .texti div .button {
@@ -18,30 +19,20 @@
 /*litlir takkar*/
 
 .box .litilbox {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
 
-    margin: 5px;
-    width: 50%;
-    display: inline;
+    gap: 10px;
+
+    .litidbox {
+        padding: 5px;
+        background-color: #E1CEC2;
+        border-radius: 5px;
+        font-size: var(--font-small-size);
+    }
 }
 
-.takkar .litilbox {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    margin: 5px;
-    width: 50%;
-    display: inline;
-}
- 
-.litilbox {
-    background-color: #E1CEC2;
-    padding: 4px;
-    border-radius: 5px;
-}
-
-.pontunarform .button {
+.main-panta .button {
     color: var(--color-light);
     background-color: var(--color-coffee);
     padding: 10px 15px;
@@ -49,4 +40,16 @@
     border-radius: var(--border-radius);
     margin-bottom: 2rem;
     font-size: var(--font-large-body-size);
+    font-family: var(--font-family-base);
+}
+
+/*Takkar á forsíðu*/
+
+.textaTakki {
+    padding: 10px 15px;
+    margin: 2rem 0;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-black-coffee);
+    color: var(--color-light);
+    background: var(--color-coffee);
 }

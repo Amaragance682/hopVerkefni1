@@ -14,6 +14,8 @@ html {
   box-sizing: inherit;
 }
 
+
+
 a {
   color: inherit;
   background-color: inherit;
@@ -58,14 +60,4 @@ a {
     background-size: var(--grid-background-width) 100%;
     z-index: 1000;
     pointer-events: none;
-  }
-
-  a {
-    color: inherit;
-    background-color: inherit;
-    text-decoration: none;
-  }
-
-  p {
-    font-family: Lato;
   }
